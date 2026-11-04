@@ -3,6 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import NavigationHeader from "../components/NavigationHeader.astro";
 import NavigationHeaderLogo from "../components/NavigationHeaderLogo.astro";
 import NavigationHeaderContactButton from "../components/NavigationHeaderContactButton.astro";
+import MainWrapper from "../components/MainWrapper.astro";
+import HeroSection from "../components/HeroSection.astro";
+import HeroSectionBadge from "../components/HeroSectionBadge.astro";
+import HeroSectionTitle from "../components/HeroSectionTitle.astro";
+import HeroSectionDescription from "../components/HeroSectionDescription.astro";
 ---
 
 <Layout>
@@ -10,4 +15,11 @@ import NavigationHeaderContactButton from "../components/NavigationHeaderContact
 		<NavigationHeaderLogo />
 		<NavigationHeaderContactButton />
 	</NavigationHeader>
+	<MainWrapper>
+		<HeroSection>
+			<HeroSectionBadge />
+			<HeroSectionTitle />
+			<HeroSectionDescription />
+		</HeroSection>
+	</MainWrapper>
 </Layout>
