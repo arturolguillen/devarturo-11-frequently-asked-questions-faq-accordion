@@ -1,0 +1,12 @@
+---
+import type { Faq } from "../faqs";
+import faqs from "../faqs";
+import FaqItem from "./FaqItem.astro";
+---
+
+<section
+    class="max-w-2xl mx-auto space-y-3.5"
+    aria-label="Acordeón de Preguntas Frecuentes"
+>
+    {faqs.map((faq) => <FaqItem faq={faq} />)}
+</section>
