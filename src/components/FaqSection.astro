@@ -1,12 +1,11 @@
 ---
-import type { Faq } from "../faqs";
 import faqs from "../faqs";
-import FaqItem from "./FaqItem.astro";
+import FaqAccordion from "./react/FaqAccordion.tsx";
 ---
 
 <section
-    class="max-w-2xl mx-auto space-y-3.5"
+    class="max-w-2xl mx-auto"
     aria-label="Acordeón de Preguntas Frecuentes"
 >
-    {faqs.map((faq) => <FaqItem faq={faq} />)}
+    <FaqAccordion client:load faqs={faqs} />
 </section>
