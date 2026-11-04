@@ -9,6 +9,10 @@ import HeroSectionBadge from "../components/HeroSectionBadge.astro";
 import HeroSectionTitle from "../components/HeroSectionTitle.astro";
 import HeroSectionDescription from "../components/HeroSectionDescription.astro";
 import FaqSection from "../components/FaqSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import ContactSectionIcon from "../components/ContactSectionIcon.astro";
+import ContactSectionContent from "../components/ContactSectionContent.astro";
+import ContactSectionButtons from "../components/ContactSectionButtons.astro";
 ---
 
 <Layout>
@@ -23,5 +27,10 @@ import FaqSection from "../components/FaqSection.astro";
 			<HeroSectionDescription />
 		</HeroSection>
 		<FaqSection />
+		<ContactSection>
+			<ContactSectionIcon />
+			<ContactSectionContent />
+			<ContactSectionButtons />
+		</ContactSection>
 	</MainWrapper>
 </Layout>
